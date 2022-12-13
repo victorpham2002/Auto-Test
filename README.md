@@ -16,7 +16,7 @@ python run.py test LoginSuite
 
 > Test changing password
 ```sh
-python run.py test LoginSuite
+python run.py test ChangePasswordSuite
 ```
 
 - Read the testcases in folder `testcases`
