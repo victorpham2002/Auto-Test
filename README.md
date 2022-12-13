@@ -1,7 +1,7 @@
 # Automation test website [bkel](https://e-learning.hcmut.edu.vn/)
 
 
-![image](https://github.com/loctvl842/Software-Testing--Proj3/blob/master/selenium.gif)
+![image](./selenium.gif)
 
 ## 📦 Installation
 
