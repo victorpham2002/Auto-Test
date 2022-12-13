@@ -1,4 +1,8 @@
 # Automation test website [bkel](https://e-learning.hcmut.edu.vn/)
+
+
+![image](https://github.com/loctvl842/Software-Testing--Proj3/blob/master/selenium.gif)
+
 ## 📦 Installation
 
 ```
@@ -24,6 +28,3 @@ python run.py test ChangePasswordSuite
 
 Create testcase by changing value in files `LoginSuite.py` and `ChangePasswordSuite.py`
 
-## Video review
-
-[![IMAGE ALT TEXT HERE](https://github.com/loctvl842/Software-Testing--Proj3/blob/master/selenium.mkv)
