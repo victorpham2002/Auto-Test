@@ -23,3 +23,7 @@ python run.py test ChangePasswordSuite
 - Read the result of test in folder `solutions`
 
 Create testcase by changing value in files `LoginSuite.py` and `ChangePasswordSuite.py`
+
+## Video review
+
+[![IMAGE ALT TEXT HERE](https://github.com/loctvl842/Software-Testing--Proj3/blob/master/selenium.mkv)
