@@ -1,0 +1,5 @@
+login: 
+oldpassword: thangcho
+newpassword: thangcho1234
+confirmpassword: 
+        

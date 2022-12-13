@@ -1,0 +1,5 @@
+login: loc.letvl842002
+mail: loc.letvl842002@hcmut.edu.vn
+newpassword: 
+confirmpassword: 
+        

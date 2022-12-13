@@ -1,0 +1,5 @@
+login: asdfa
+mail: 
+newpassword: 
+confirmpassword: 
+        

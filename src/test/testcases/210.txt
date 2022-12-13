@@ -1,0 +1,5 @@
+login: loc.letvl842002
+oldpassword: thangcho
+newpassword: 
+confirmpassword: 
+        
