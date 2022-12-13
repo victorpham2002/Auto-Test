@@ -1,3 +1,4 @@
+# Automation test website [bkel](https://e-learning.hcmut.edu.vn/)
 ## 📦 Installation
 
 ```
@@ -8,9 +9,14 @@ git clone https://github.com/loctvl842/Software-Testing--Proj3
 
 Go to `src` folder and run the following commands
 
-```
+> Test login
+```sh
 python run.py test LoginSuite
-python run.py test ChangePasswordSuite
+```
+
+> Test changing password
+```sh
+python run.py test LoginSuite
 ```
 
 - Read the testcases in folder `testcases`
