@@ -6,9 +6,11 @@
 ## 📦 Installation
 
 ```
-pip3 install selenium
-pip3 install webdriver-manager
 git clone https://github.com/loctvl842/Software-Testing--Proj3
+cd Software-Testing--Proj3
+python3 -m venv env
+source env/bin/activate
+pip install -r ./requirements.txt
 ```
 
 ## 🚀 Usage
