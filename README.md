@@ -92,12 +92,6 @@ driver.find_element(By.XPATH, "//a[starts-with(@href, 'https://e-learning.hcmut.
     powermenu_btn.is_displayed():
 ```
 
-<style>
-td {
-    width: 50%;
-}
-</style>
-
 ## Test Result
 
 <table>
@@ -109,10 +103,10 @@ td {
     </thead>
     <tbody>
     <tr>
-        <td>
+        <td width="50%">
             <img src="./results/Login.png"></img>
         </td>
-        <td>
+        <td width="50%">
             <img src="./results/changepassword.png"></img>
         </td>
     </tbody>
