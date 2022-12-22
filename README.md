@@ -1,4 +1,7 @@
-# Automation test website [bkel](https://e-learning.hcmut.edu.vn/)
+<div align="center">
+    <h2>Automation test website <span><a href="https://e-learning.hcmut.edu.vn/">bkel</a> </span>
+    </h2>
+</div>
 
 ![image](./selenium.gif)
 
@@ -33,7 +36,7 @@ python run.py test ChangePasswordSuite
 
 Create testcases by changing value in files `LoginSuite.py` and `ChangePasswordSuite.py`
 
-##	🤷‍♀️ Explain
+## 🤷‍♀️ Explain
 
 - After installing all dependencies in files `requirements.txt`, import in file `TestUtils.py`:
 
