@@ -103,19 +103,18 @@ td {
 <table>
     <thead>
         <tr>
-            <td>
-                <th>Login</th>
-                <th>ChangePassword</th>
-            </td>
+            <th>Login</th>
+            <th>ChangePassword</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>
-                <a href="./results/Login.png"></a>
-                <a href="./results/changepassword.png"></a>
-            </td>
-        </tr>
+    <tr>
+        <td>
+            <img src="./results/Login.png"></img>
+        </td>
+        <td>
+            <img src="./results/changepassword.png"></img>
+        </td>
     </tbody>
 </table>
 
