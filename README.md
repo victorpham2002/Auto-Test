@@ -79,11 +79,17 @@ driver.find_element(By.XPATH, "//a[starts-with(@href, 'https://e-learning.hcmut.
     powermenu_btn.is_displayed():
 ```
 
+<style>
+td {
+    width: 50%;
+}
+</style>
+
 ## Test Result
-### Login
-![login](./results/Login.png)
-### ChangePassword
-![ChangePassword](./results/changepassword.png)
+
+|Login|ChangePassword|
+|--|--|
+|![login](./results/Login.png)|![ChangePassword](./results/changepassword.png)|
 
 ## My account to login above website
 
