@@ -1,6 +1,5 @@
 # Automation test website [bkel](https://e-learning.hcmut.edu.vn/)
 
-
 ![image](./selenium.gif)
 
 ## 📦 Installation
@@ -18,11 +17,13 @@ pip install -r ./requirements.txt
 Go to `src` folder and run the following commands
 
 > Test login
+
 ```sh
 python run.py test LoginSuite
 ```
 
 > Test changing password
+
 ```sh
 python run.py test ChangePasswordSuite
 ```
@@ -33,7 +34,9 @@ python run.py test ChangePasswordSuite
 Create testcases by changing value in files `LoginSuite.py` and `ChangePasswordSuite.py`
 
 ## Explain
+
 - After installing all dependencies in files `requirements.txt`, import in file `TestUtils.py`:
+
 ```python
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -44,30 +47,39 @@ from selenium.webdriver.common.by import By
 ```
 
 - Get the `driver` by the following command(Make sure to install `Chrome`):
+
 ```python
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 ```
 
 - In order to test the website, we use the following command:
+
 ```python
     driver.get("https://e-learning.hcmut.edu.vn/")
 ```
+
 - Then test one element by some ways below:
-> find element by id
+  > find element by id
+
 ```python
     result_eles = driver.find_elements(By.ID, "msg")
 ```
+
 > find element by class name
+
 ```python
     driver.find_element(By.CLASS_NAME, "langbutton")
 ```
+
 > find element by XPath
+
 ```python
 
 driver.find_element(By.XPATH, "//a[starts-with(@href, 'https://e-learning.hcmut.edu.vn/login/logout.php')]")
 ```
 
 - We can also control one element by an action such as: cllcking a button, or inputting a field input. For example:
+
 ```python
     driver.find_element(By.ID, "username").clear()
     driver.find_element(By.ID, "username").send_keys("loc.letvl842002")
@@ -75,6 +87,7 @@ driver.find_element(By.XPATH, "//a[starts-with(@href, 'https://e-learning.hcmut.
 ```
 
 - Beside, we can check if one element is displayed by using the following command:
+
 ```python
     powermenu_btn.is_displayed():
 ```
@@ -87,9 +100,28 @@ td {
 
 ## Test Result
 
-|Login|ChangePassword|
-|--|--|
-|![login](./results/Login.png)|![ChangePassword](./results/changepassword.png)|
+<table>
+    <thead>
+        <tr>
+            <td>
+                <th>Login</th>
+                <th>ChangePassword</th>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <a href="./results/Login.png"></a>
+                <a href="./results/changepassword.png"></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- | Login                         | ChangePassword                                  | -->
+<!-- | ----------------------------- | ----------------------------------------------- | -->
+<!-- | ![login](./results/Login.png) | ![ChangePassword](./results/changepassword.png) | -->
 
 ## My account to login above website
 
