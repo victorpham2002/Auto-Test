@@ -33,7 +33,7 @@ python run.py test ChangePasswordSuite
 
 Create testcases by changing value in files `LoginSuite.py` and `ChangePasswordSuite.py`
 
-## Explain
+##	🤷‍♀️ Explain
 
 - After installing all dependencies in files `requirements.txt`, import in file `TestUtils.py`:
 
@@ -92,7 +92,7 @@ driver.find_element(By.XPATH, "//a[starts-with(@href, 'https://e-learning.hcmut.
     powermenu_btn.is_displayed():
 ```
 
-## Test Result
+## 💯 Test Result
 
 <table>
     <thead>
