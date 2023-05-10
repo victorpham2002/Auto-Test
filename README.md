@@ -114,9 +114,3 @@ driver.find_element(By.XPATH, "//a[starts-with(@href, 'https://e-learning.hcmut.
         </td>
     </tbody>
 </table>
-
-## My account to login above website
-
-username: loc.letvl842002
-
-password: thangcho
