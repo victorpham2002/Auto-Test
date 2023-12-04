@@ -1,2 +1,3 @@
-username: sdfasdfasdf
-password: 
+username: 123456789
+password: asdfasdf
+checked: True

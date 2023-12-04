@@ -1,5 +1,3 @@
-login: 
-oldpassword: asdfasf
-newpassword: 
-confirmpassword: 
-        
+username: 0901235456
+password: asdfasdf
+checked: False

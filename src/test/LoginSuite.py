@@ -3,51 +3,67 @@ from TestUtils import TestLogin
 
 
 class LoginSuite(unittest.TestCase):
+
     def test_1(self):
-        """Leave both blank"""
-        username = ""
-        password = ""
-        expect = "Please enter your password.\nPlease enter your username."
-        self.assertTrue(TestLogin.test(username, password, expect, 101))
+        """Input wrong phoneNumber and wrong password"""
+        phoneNumber = "123456789"
+        password = "asdfasdf"
+        checked = "False"
+        expect = "Account does not exist! Please re-enter!"
+        self.assertTrue(TestLogin.test(phoneNumber, password, checked, expect, 201))
 
     def test_2(self):
-        """leave blank password"""
-        username = "sdfasdfasdf"
-        password = ""
-        expect = "Please enter your password."
-        self.assertTrue(TestLogin.test(username, password, expect, 102))
-
-    def test_3(self):
-        """leave blank username"""
-        username = ""
+        """Input wrong phoneNumber and wrong password"""
+        phoneNumber = "123456789"
         password = "asdfasdf"
-        expect = "Please enter your username."
-        self.assertTrue(TestLogin.test(username, password, expect, 103))
+        checked = "True"
+        expect = "Account does not exist! Please re-enter!"
+        self.assertTrue(TestLogin.test(phoneNumber, password, checked, expect, 202))
+        
+    def test_3(self):
+        """Input correct phoneNumber and wrong password"""
+        phoneNumber = "0901235456"
+        password = "asdfasdf"
+        checked = "False"
+        expect = "Account does not exist! Please re-enter!"
+        self.assertTrue(TestLogin.test(phoneNumber, password, checked, expect, 203))
 
     def test_4(self):
-        """Input wrong username and wrong password"""
-        username = "asdfasdf"
+        """Input correct phoneNumber and wrong password"""
+        phoneNumber = "0901235456"
         password = "asdfasdf"
-        expect = "The credentials you provided cannot be determined to be authentic."
-        self.assertTrue(TestLogin.test(username, password, expect, 104))
-
+        checked = "True"
+        expect = "Account does not exist! Please re-enter!"
+        self.assertTrue(TestLogin.test(phoneNumber, password, checked, expect, 204))
+        
     def test_5(self):
-        """Input correct username and wrong password"""
-        username = "loc.letvl842"
-        password = "asdfasdf"
-        expect = "The credentials you provided cannot be determined to be authentic."
-        self.assertTrue(TestLogin.test(username, password, expect, 105))
-
+        """Input wrong phoneNumber and correct password"""
+        phoneNumber = "123456789"
+        password = "123456"
+        checked = "False"
+        expect = "Account does not exist! Please re-enter!"
+        self.assertTrue(TestLogin.test(phoneNumber, password, checked, expect, 205))
+        
     def test_6(self):
-        """Input correct username and correct password"""
-        username = "loc.letvl842002"
-        password = "thangcho"
-        expect = "Login successfully"
-        self.assertTrue(TestLogin.test(username, password, expect, 106))
-
+        """Input wrong phoneNumber and correct password"""
+        phoneNumber = "123456789"
+        password = "123456"
+        checked = "True"
+        expect = "Account does not exist! Please re-enter!"
+        self.assertTrue(TestLogin.test(phoneNumber, password, checked, expect, 206))
+        
     def test_7(self):
-        """Input wrong username and correct password"""
-        username = "loc.letvl"
-        password = "thangcho"
-        expect = "The credentials you provided cannot be determined to be authentic."
-        self.assertTrue(TestLogin.test(username, password, expect, 107))
+        """Input correct phoneNumber and correct password"""
+        phoneNumber = "0901235456"
+        password = "123456"
+        checked = "False"
+        expect = "Account does not exist! Please re-enter!"
+        self.assertTrue(TestLogin.test(phoneNumber, password, checked, expect, 207))
+        
+    def test_8(self):
+        """Input correct phoneNumber and correct password"""
+        phoneNumber = "0901235456"
+        password = "123456"
+        checked = "True"
+        expect = "Login successfully"
+        self.assertTrue(TestLogin.test(phoneNumber, password, checked, expect, 208))
